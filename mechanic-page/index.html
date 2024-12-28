@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="Mecânica Ebenezer - Serviços automotivos de confiança. Manutenção, revisão e reparos para garantir a segurança do seu veículo." />
+    <meta name="keywords" content="Mecânica Ebenezer, oficina automotiva, revisão de carros, manutenção, troca de óleo, alinhamento, balanceamento, serviços automotivos" />
+    <meta name="author" content="Mecânica Ebenezer" />
+    <meta name="robots" content="index, follow" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mecânica Ebenezer - Cuidamos do seu carro com excelência" />
+    <meta property="og:description" content="Profissionais capacitados e serviços de alta qualidade para o cuidado completo do seu veículo na Mecânica Ebenezer." />
+    <meta property="og:image" content="https://www.mecanicaebenezer.com.br/assets/og-image.jpg" />
+    <meta property="og:url" content="https://www.mecanicaebenezer.com.br" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mecânica Ebenezer - Seu carro em boas mãos" />
+    <meta name="twitter:description" content="Mecânica automotiva especializada com atendimento personalizado e garantia de qualidade." />
+    <meta name="twitter:image" content="https://www.mecanicaebenezer.com.br/assets/og-image.jpg" />
+    
+    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
+    <link rel="apple-touch-icon" href="/src/assets/apple-touch-icon.png" />
+    
+    <title>Mecânica Ebenezer - Seu carro em boas mãos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./src/index.css" />
+
+  </head>
+  
+  <body>
+    <noscript>
+      <p>Você precisa ativar o JavaScript para visualizar este site corretamente.</p>
+    </noscript>
+    
+    <div id="root"></div>
+    
+    <div id="loader">
+      <p>Carregando...</p>
+    </div>
+    
+    <script>
+      window.onload = () => {
+        const loader = document.getElementById('loader');
+        if (loader) loader.style.display = 'none';
+      };
+    </script>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

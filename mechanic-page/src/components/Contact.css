@@ -1,0 +1,19 @@
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.whatsapp-button {
+  padding: 14px 30px;
+  background-color: #25D366;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe57;
+}
