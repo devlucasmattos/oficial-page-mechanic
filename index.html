@@ -30,8 +30,8 @@
     
     <!-- Otimização do CSS para carregar antes do conteúdo ser exibido -->
 
-    <script type="module" crossorigin src="/oficial-page-mechanic/assets/index-DJa5L0KU.js"></script>
-    <link rel="stylesheet" crossorigin href="/oficial-page-mechanic/assets/index-C5VyPFqM.css">
+    <script type="module" crossorigin src="/oficial-page-mechanic/assets/index-Cjfhd2gw.js"></script>
+    <link rel="stylesheet" crossorigin href="/oficial-page-mechanic/assets/index-NxleihfO.css">
   </head>
   
   <body>
@@ -48,10 +48,13 @@
     
     <!-- Remover loader após o carregamento do conteúdo -->
     <script>
-      window.onload = () => {
-        const loader = document.getElementById('loader');
-        if (loader) loader.style.display = 'none';
-      };
+  window.onload = () => {
+    const loader = document.getElementById('loader');
+    const root = document.getElementById('root');
+    
+    if (loader) loader.style.display = 'none';
+    if (root) root.style.display = 'block';
+  };
     </script>
 
     <!-- Carregamento assíncrono do script React (usando defer para garantir que o script seja carregado depois de todo o HTML) -->
