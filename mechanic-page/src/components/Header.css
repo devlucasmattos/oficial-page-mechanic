@@ -2,27 +2,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 20px;
-    background: linear-gradient(329deg, rgba(111,111,111,1) 0%, rgba(43,43,43,1) 45%, rgba(0,0,0,1) 100%);
+    padding: 20px 40px;
+    background: rgba(31, 31, 31, 0.6); 
     color: white;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    position: relative;
-    height: 50px;
-    flex-wrap: nowrap;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    transition: backdrop-filter 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .logo {
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: white;
-    transition: none;
-    padding-left: 10%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
 }
 
-nav {
-    position: relative;
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%; 
 }
 
 .nav-list {
@@ -30,49 +40,66 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-wrap: nowrap;
 }
 
 .nav-list li {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .nav-list li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-list li a:hover {
-    color: #0f0f0f;
+    color: #f0a500;
+    transform: translateY(-2px);
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
+    .hamburger {
+        display: block;
     }
 
-    .logo {
-        margin-bottom: 10px;
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: center; 
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(31, 31, 31, 0.8); 
+        backdrop-filter: blur(20px);  
+        -webkit-backdrop-filter: blur(20px); 
+        text-align: center;
+        padding: 30px 0;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        z-index: 99; 
+        transition: backdrop-filter 0.3s ease; 
+    }
+
+    .nav.open {
+        display: flex;
     }
 
     .nav-list {
         flex-direction: column;
-        align-items: center;
-        width: 100%;
     }
 
     .nav-list li {
-        margin-left: 0;
-        margin-bottom: 10px;
+        margin: 15px 0;
     }
 
-    .nav-list li a {
-        font-size: 1.4rem;
-    }
+
 }

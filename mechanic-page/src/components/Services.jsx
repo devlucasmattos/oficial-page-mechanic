@@ -7,20 +7,20 @@ function Services() {
       <h2>Nossos Serviços</h2>
       <div className="services-grid">
         <div className="service-card">
-          <h3>Troca de óleo</h3>
-          <p>Troca de óleo rápida e eficiente para manter o motor do seu carro em perfeitas condições.</p>
+          <h3>Suspensão</h3>
+          <p>Manutenção e troca de peças da suspensão para garantir a estabilidade e segurança do seu veículo.</p>
         </div>
         <div className="service-card">
-          <h3>Revisão geral</h3>
-          <p>Revisão completa para garantir a segurança e desempenho do seu veículo.</p>
+          <h3>Freios</h3>
+          <p>Manutenção e troca de sistema de freios com peças de alta qualidade, garantindo a segurança ao dirigir.</p>
         </div>
         <div className="service-card">
-          <h3>Alinhamento e balanceamento</h3>
-          <p>Serviços de alinhamento e balanceamento para um rodar suave e seguro.</p>
+          <h3>Injeção Eletrônica</h3>
+          <p>Diagnóstico e manutenção do sistema de injeção eletrônica para otimizar o desempenho e consumo de combustível.</p>
         </div>
         <div className="service-card">
-          <h3>Freios e suspensão</h3>
-          <p>Manutenção e troca de freios e suspensão com peças de alta qualidade.</p>
+          <h3>Revisão Geral</h3>
+          <p>Revisão completa para garantir a segurança e o perfeito funcionamento de todos os sistemas do seu veículo.</p>
         </div>
       </div>
     </section>
