@@ -12,26 +12,26 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Mecânica Ebenezer - Cuidamos do seu carro com excelência" />
     <meta property="og:description" content="Profissionais capacitados e serviços de alta qualidade para o cuidado completo do seu veículo na Mecânica Ebenezer." />
-    <!--<meta property="og:url" content="https://www.mecanicaebenezer.com.br" /> CORRIGIR-->
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Mecânica Ebenezer - Seu carro em boas mãos" />
     <meta name="twitter:description" content="Mecânica automotiva especializada com atendimento personalizado e garantia de qualidade." />
-    <!--<meta name="twitter:image" content="https://www.mecanicaebenezer.com.br/assets/og-image.jpg" /> CORRIGIR-->
     
     <link rel="icon" type="image/png" href="/oficial-page-mechanic/favico.png" />
     
     <title>Mecânica Ebenezer - Seu carro em boas mãos</title>
 
+    <!-- Preconnect para fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
+    <!-- Carregamento assíncrono da fonte para não bloquear o carregamento -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
     
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
+    <!-- Otimização do CSS para carregar antes do conteúdo ser exibido -->
 
-    <script type="module" crossorigin src="/oficial-page-mechanic/assets/index-CPNdOsJQ.js"></script>
-    <link rel="stylesheet" crossorigin href="/oficial-page-mechanic/assets/index-CfclsBeX.css">
+    <script type="module" crossorigin src="/oficial-page-mechanic/assets/index-DJa5L0KU.js"></script>
+    <link rel="stylesheet" crossorigin href="/oficial-page-mechanic/assets/index-C5VyPFqM.css">
   </head>
   
   <body>
@@ -41,16 +41,19 @@
     
     <div id="root"></div>
     
-    <div id="loader">
+    <!-- Loader de carregamento -->
+    <div id="loader" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;">
       <p>Carregando...</p>
     </div>
     
+    <!-- Remover loader após o carregamento do conteúdo -->
     <script>
       window.onload = () => {
         const loader = document.getElementById('loader');
         if (loader) loader.style.display = 'none';
       };
     </script>
-    
+
+    <!-- Carregamento assíncrono do script React (usando defer para garantir que o script seja carregado depois de todo o HTML) -->
   </body>
 </html>
